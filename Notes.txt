@@ -1,0 +1,56 @@
+1- Ubiquitous Language
+
+* Yazilim ekibi ile Domain Expert arasindaki ortak iletisim
+
+	- Herseyin karsiligi olmasi gerekir.
+	- Ayrintilar gundemde olmalidir.
+	- Kullanilan dil iyilestirilmelidir.
+	- Ornekler somut olmalidir.
+	- Amaci anlatmalidir.
+
+
+2- Bounded Context - Context Mapping
+
+* DDD tasarimi kisminda en merkezi prensiptir.
+	
+	- Bir domain subdomain ler icerebilir ve icermelidir.
+		* Siparis , Musteri, Kullanici, Urun, Stok..
+	- Kendi iclerindeki tutarlilik ve butunluk olmalidir.
+	- Domain Specific Language
+	- Bounded Context' ler birbirleri ile iletisim kurabilir !
+	- Context Mapping - Bounded Context Kesisim noktalari ve iletisim mimarisi
+
+
+3- Entity & Value Object, Aggregate Root
+
+* Domain imizi modelleme kismindaki en sýk kullanilan kaliplar
+
+	- Entity -> Kimlige sahip objeler (id)
+	- ValueObject -> Kimlige sahip degillerdir (DTO)
+	- Aggregate Root -> Icerisinde birbiri olmadan dusunulemez objeleri barindirir. Birbirleri olmadan, olmalarinin bir anlami olmayan objelerdir.
+		* Transaction butunlugu
+		* Iliskili objeler
+		* Is kurallari
+
+
+4- Services - Repository - Infrastructure
+
+* Is kurallarinin isletilmesi ve ciktilari yonetmek icin kullanilan bolumlerdir.
+	
+	- Services -> Is kurallari ve dogrulama islemleri icin kullanilir.
+	- Repository -> Bazi kurallar ile birlikte Aggregate - DB iletisimi icin kullanilirlar.
+
+
+5- Layered Architecture
+
+* Dort katmanli mimari DDD nin en temel kavramlarindandir.
+	
+	- Domain Layer
+	- Application Layer
+	- Infrastructure Layer
+	- Presentation Layer
+
+
+6- Refactoring, Clean & Readable Code
+
+* Sadece anlik gorevi degil, geneli iyilestirmeyi hedefler.
